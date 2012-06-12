@@ -1,0 +1,51 @@
+body
+{
+	display: block;
+}
+input, select
+{
+	border-radius: 0.5em;
+	margin: 0.8em 0 1.2em 0;
+	padding: 0.2em 0.3em 0.2em 0.6em; 
+	width: 50%;
+}
+label
+{
+	float: left; 
+	clear: right;
+	margin: 0.2em 0.6em 0.2em 0;
+	text-align: right;    
+	text-transform:capitalize;	
+	width: 35%;
+}
+#btnInventarioEditar
+{
+	border-radius: 0.8em;
+	background: #00FF00;
+	color: white;
+}
+#btnInventarioEliminar
+{
+	border-radius: 0.8em;
+	background: #FF0000;
+	color: white;
+}
+#InventarioVer
+{
+	display: none;
+}
+.txtTabla
+{
+	border: none;
+	background: none;
+	text-align: center;
+	width: auto;
+}
+.txtTabla:focus , .txtTabla:hover
+{
+	background: white;
+}
+TABLE tr:hover
+{
+	background: #E8E8E8;
+}

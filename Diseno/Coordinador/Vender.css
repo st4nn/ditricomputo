@@ -1,0 +1,29 @@
+#btnVenderAgregarLineaBlanca, #btnVenderEliminarProducto, #btnVenderGuardarFactura
+{
+	height: 2em;
+	width: 2em;
+}
+#btnVenderGuardarFactura
+{
+	right: 1em;
+	margin: 0;
+}
+#frmCliente
+{
+	height: 20em;
+	width: 40%;
+}
+#frmAgregarProductos
+{
+	height: 20em;
+	width: 55%;
+}
+#txtVenderTablaArticulo
+{width: 95%;}
+#Vender form
+{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}

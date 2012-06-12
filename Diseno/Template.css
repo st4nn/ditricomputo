@@ -1,0 +1,107 @@
+@font-face
+{
+	font-family: "Titulos";
+	src: url("Fuente.ttf");
+}
+@font-face
+{
+	font-family: "Evolution";
+	src: url("Evolution.ttf");
+}
+@font-face
+{
+	font-family: "Junction";
+	src: url("Junction.ttf");
+}
+article, footer, header, section
+{
+	display: block;
+}
+body
+{
+	background: url("Imagenes/background2.jpg");
+	font-family: "Junction";
+	font-size: 15px;
+	margin: 0;
+	text-align: center;
+}
+footer, header, section, form
+{
+	background: #fff;
+	border-radius: 0.5em;
+	box-shadow: rgba(0,0,0,0.8) 0px 4px 10px;
+	margin: 1em auto;
+	padding: 1em;
+	width: 90%;
+}
+footer
+{
+	background: linear-gradient(#FFF, #666699);
+}
+h1
+{
+	font-family: "Titulos";
+}
+header
+{
+	background: url("Imagenes/logo.png") no-repeat 20px center,
+			linear-gradient(#FFF, #666699);
+	color: white;
+	font-family: "Titulos";
+}
+header h1
+{
+	font-size: 3em;
+	font-weight: bold;
+	text-shadow: rgba(0,0,0,0.7) 10px 2px 0.2em;
+}
+input[type='submit'], input[type='reset']
+{
+	height: 3em;
+	margin: 0;
+	width: auto;
+}
+TABLE
+{
+	font-size: 1em;
+	text-align: left;
+	width: 100%;
+}
+TABLE TH
+{
+	background: white;
+	text-align: center;
+}
+TABLE TR
+{	
+	background: #F8F8F8 ;
+}
+TABLE TR:nth-child(even)
+{
+	background: #F8F8FF;
+}
+TABLE TD
+{
+	text-align: center;
+}
+#menu
+{
+	background: #d6d6e3;
+	padding: 0;
+	text-align:right;
+	width: 90%;
+}
+#menu button
+{
+	background: #d6d6e3;
+	border-radius: 0.5em;
+	box-shadow: rgba(0,0,0,0.8) 0px 4px 10px;
+	color: white;
+	font-family: "Evolution";
+	height: 3em;
+	margin: 0;
+}	
+#menu button:hover
+{
+	background: #d6dfff;
+}

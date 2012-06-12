@@ -1,0 +1,38 @@
+a
+{
+	text-decoration: none;
+}
+section
+{
+	background: linear-gradient(#FFF, #dfdfe9);
+	width: 90%;
+}
+#EstadoLogin
+{
+	color: red;
+}
+#Usuario
+{
+	background: #9999FF;
+	text-align: right;
+	width:310px;
+}
+#Usuario input[type="submit"]
+{
+	border-radius: 0.5em;
+	box-shadow: rgba(0,0,0,0.8) 0px 4px 10px;
+ 	font-weight: bold;
+	height: 2em;
+	margin: 0.5em 5% 0em 60%;
+	cursor: pointer;	
+	width: 8em;
+}
+#Usuario input[type="submit"]:hover
+{
+	background: DarkGray ;
+	text-decoration: underline;
+}
+#Usuario input
+{
+	margin: 0 10% 0 1em;
+}

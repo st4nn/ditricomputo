@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Districomputo Digital</title>
+	<link rel="stylesheet" href="Diseno/Template.css" />	
+	<link rel="stylesheet" href="Diseno/Coordinador.css" />	
+	<link rel="stylesheet" href="Diseno/Coordinador/Inventario.css" />
+	<link rel="stylesheet" href="Diseno/Coordinador/Kardex.css" />
+	<link rel="stylesheet" href="Diseno/Coordinador/Movimientos.css" />
+	<link rel="stylesheet" href="Diseno/Coordinador/Vender.css" />
+	
+	<link rel="stylesheet" href="Diseno/smoothness/jquery-ui-1.8.19.custom.css" />
+
+	<script src="js/html5/HTML5_enabling_script.js"></script>
+	<script src="js/html5/prefixfree.min.js"></script>
+	<script src="js/html5/jquery.js"></script>
+	<script src="js/html5/jquery-ui-1.8.19.custom.min.js"></script>
+	
+	<script src="js/funciones_Coordinador.js"></script>
+	<script src="js/Coordinador/Inventario.js"></script>
+	<script src="js/Coordinador/Kardex.js"></script>
+	<script src="js/Coordinador/Movimientos.js"></script>
+	<script src="js/Coordinador/Vender.js"></script>
+</head>
+<body>
+<header>
+	<h1>Districomputo Digital</h1>
+</header>
+<section id="menu">
+	<button id="btnVender">Vender</button>
+	<button id="btnMovimientos">Movimientos</button>
+	<button id="btnKardex">Kardex</button>
+	<button id="btnInventario">Inventario</button>
+	<button id="btnCerrarSesion">Cerrar Sesion</button>
+</section>
+<section id="Inventario">
+	<section id="menu">
+		<button id="btnAgregar">Agregar</button>	
+		<button id="btnVer">Ver</button>	
+	</section>
+	<form id="InventarioAgregar">
+		<label>Codigo:</label>
+		<input id="txtInventarioCodigo" type="text" required />
+		<label>Nombre:</label>
+		<input id="txtInventarioNombre" type="text" required />
+		<label>Descripción:</label>
+		<input id="txtInventarioDescripcion" type="text" required />
+		<label>Costo:</label>
+		<input id="txtInventarioCosto" type="number" required />
+		<label>Precio de Venta:</label>
+		<input id="txtInventarioPrecioVenta" type="number" required>
+		<p><label>Producto con Iva:</label>
+		<input id="chkInventarioIva" type="checkbox"></p>
+		<p><input id="btnInventarioIngresar" type="submit" value="Ingresar">
+		<input id="txtInventarioReset" value='Limpiar' type="reset" /></p>
+		<article id="InventarioEstadoAgregar"></article>
+	</form>
+	<form id="InventarioVer">
+		<label>Código o Nombre:</label>
+		<input id="txtInventarioParametro" type="search" />
+		<section id="InventarioVerProductos"></section>
+	</form>
+</section>
+<section id="Kardex">
+	<form id="KardexListar">
+		<select id="cboParametro" placeholder="Ordenar Por">
+			<option value="Codigo">Codigo</option>
+			<option value="Nombre">Nombre</option>
+			<option value="Costo">Costo</option>
+			<option value="PrecioVenta">Precio de Venta</option>
+			<option value="Cantidad">Cantidad</option>
+		</select>
+		<input id="txtKardexParametro" type="search"/>
+		<select id="cboOrden" placeholder="Ordenar Por">
+			<option value="ASC">De Menor A Mayor</option>
+			<option value="DESC">De Mayor A Menor</option>
+		</select>
+		<article id="artKardexListar"></article>
+	</form>
+			<form id="KardexIngresarCantidad">
+				<label>Cantidad:</label>
+				<input id='txtKardexIngresarCantidad' type='number' required>
+				<label>Costo:</label>
+				<input id='txtKardexIngresarCantidadCosto' type='number' required>
+				<label>Precio:</label>
+				<input id='txtKardexIngresarCantidadPrecio' type='number' required>
+				<p><input id='btnKardexIngresarCantidad' type='submit' value='Ingresar'>
+				<input id='btnKardexIngresarCantidadReset' type='reset' value='Cancelar'></p>
+				<article id='KardexEstadoCantidad'></article>
+			</form>
+</section>
+<section id='Movimientos'>
+		<form id="MovimientosListar">
+			<select id="cboMovimientosParametro" placeholder="Ordenar Por">
+				<option value="Codigo">Codigo</option>
+				<option value="Nombre">Nombre</option>
+				<option value="Fecha">Fecha</option>
+			</select>
+			<input type="text" id="txtFecha" placeholder="Desde"/>
+			<input type="text" id="txtFechaH" placeholder="Hasta"/>
+			<input id="txtMovimientosParametro" type="search"/>
+			<select id="cboMovimientosOrden" placeholder="Ordenar Por">
+				<option value="ASC">De Menor A Mayor</option>
+				<option value="DESC">De Mayor A Menor</option>
+			</select>
+			<input id="btnMovimientosSubmit" src="Diseno/Imagenes/lupa.png" type="image"/>
+		</form>
+	<article id='artMovimientosListar'></article>
+</section>
+<section id="Vender">
+		<form id="frmCliente">
+			<p><a id='VenderCodigoCliente'>Codigo: <span></span></a></p>
+			<label>Cliente:</label>
+			<input id="txtVenderClienteNombre" type="search" placeholder="Nombre del Cliente"/>
+			<label>Documento (Nit/CC):</label>
+			<input id="txtVenderClienteDocumento" type="text" placeholder="Nit/CC del Cliente"/>
+			<label>Telefono:</label>
+			<input id="txtVenderClienteTelefono" type="text" placeholder="Telefono del Cliente"/>
+			<label>Dirección:</label>
+			<input id="txtVenderClienteDireccion" type="text" placeholder="Dirección del Cliente"/>
+			<input id="btnVenderClienteSubmit" type="submit" value="Guardar"/>
+			<input id="btnVenderClienteReset" type="reset" value="Limpiar"/>
+		</form>
+		<form id='frmAgregarProductos'>
+		
+			<h2 id='NoFactura'>Factura No: <span></span></h2>
+		
+			<label for="txtVenderNombreProducto">Producto:</label>
+			<input id="txtVenderNombreProducto" type="search"/>
+			<p><label>Agregar línea en Blanco:</label>
+			<input id="btnVenderAgregarLineaBlanca" src="Diseno/Imagenes/add.png" type="image"/></p>
+		</form>
+	
+		<section id='artVenderProductos'>
+			<TABLE BORDER=0 CELLSPACING=4 CELLPADDING=5 id='TablaVenderProductos'>
+				<TR>
+					<TH>Articulo</TH>
+					<TH width='5%'>Cantidad</TH>
+					<TH width='15%'>Precio Unitario</TH>
+					<TH width='15%'>Subtotal</TH>
+					<TH width='2%'></TH>
+				</TR>
+			</TABLE>
+		</section>
+		<section>
+			<p><h2 id='VenderTotal'>Total: <span>0</span></h2></p>
+			<input id="btnVenderGuardarFactura" src="Diseno/Imagenes/guardar.png" type="image"/></p>
+		</section>
+		
+</section>
+<footer>
+	Creado y Diseñado por <a href="https://twitter.com/st4nn">@st4nn</a>
+</footer>
+</body>
+</html>

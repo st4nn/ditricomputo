@@ -1,0 +1,12 @@
+#btnMovimientosSubmit
+{
+	height: 32px;
+	margin: 0;
+	padding: 0;
+	width: 32px;
+}
+#txtFecha, #txtFechaH
+{
+	display: none;
+	width: auto;
+}
