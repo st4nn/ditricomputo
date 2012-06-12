@@ -1,0 +1,4 @@
+ditricomputo
+============
+
+Aplicación para German
